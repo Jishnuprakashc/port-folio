@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"/>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 shadow sticky top-0 z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <!-- Logo -->
+      <h1 class="text-2xl font-bold text-white">Jishnu Prakash C</h1>
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex space-x-6">
+        <a href="#hero" class="text-white font-semibold hover:text-yellow-300">Home</a>
+        <a href="#projects" class="text-white font-semibold hover:text-yellow-300">Projects</a>
+        <a href="#about" class="text-white font-semibold hover:text-yellow-300">About</a>
+        <a href="#skills" class="text-white font-semibold hover:text-yellow-300">Skills</a>
+        <a href="#contact" class="text-white font-semibold hover:text-yellow-300">Contact</a>
+      </nav>
+      <!-- Mobile Menu Button -->
+      <button class="md:hidden text-white focus:outline-none" id="menu-button">
+        &#9776;
+      </button>
+    </div>
+    <!-- Mobile Navigation -->
+    <div class="md:hidden" id="mobile-menu" style="display: none;">
+      <nav class="px-6 py-4 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white space-y-4">
+        <a href="#hero" class="block font-semibold hover:text-yellow-300">Home</a>
+        <a href="#projects" class="block font-semibold hover:text-yellow-300">Projects</a>
+        <a href="#about" class="block font-semibold hover:text-yellow-300">About</a>
+        <a href="#skills" class="block font-semibold hover:text-yellow-300">Skills</a>
+        <a href="#contact" class="block font-semibold hover:text-yellow-300">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <section id="hero" class="bg-blue-600 text-white py-20">
+    <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+      <!-- Text Content -->
+      <div class="md:w-1/2 text-center md:text-left">
+        <h2 class="text-4xl font-bold mb-4">Hello, I'm Jishnu Prakash C</h2>
+        <p class="text-lg mb-8">A passionate web developer creating stunning and user-friendly websites. I bring ideas to life with innovative designs and efficient code.</p>
+        <p class="text-lg mb-8">Driven by creativity and technology, I constantly explore new trends and tools to deliver exceptional digital experiences.</p>
+        <!-- Download CV Button -->
+        <a href="./resume.pdf" download class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-200">
+          Download CV
+        </a>
+      </div>
+      <!-- Image -->
+      <div class="md:w-1/2 mt-8 md:mt-0 flex justify-end">
+        <img src="./WhatsApp Image 2024-11-26 at 10.35.05 PM.jpeg" class="rounded-full object-cover w-60 h-60" alt="Jishnu Prakash C">
+      </div>
+    </div>
+  </section>
+  
+  <!-- Projects Section -->
+  <section id="projects" class="py-16">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-12 text-center">My Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project Cards -->
+        <div class="bg-white shadow rounded-lg overflow-hidden">
+          <img src="bfdab732-sign_in_git.png" alt="Project 1" class="w-full">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Git Hub</h3>
+            <p class="text-gray-600 mb-4">GitHub is a platform for hosting code that allows for version control and collaboration. It allows you and others to collaborate on projects from anywhere.</p>
+            <a href="https://github-login-sandy.vercel.app/" target="_blank" rel="noopener noreferrer" class="text-blue-500 font-semibold hover:underline">
+              View Project
+            </a>
+          </div>
+        </div>
+        <!-- Repeat similar cards for more projects -->
+        <div class="bg-white shadow rounded-lg overflow-hidden">
+          <img src="./Responsive Products - Profile 1 - Microsoft​ Edge 30-12-2024 16_42_01.png" alt="Project 2" class="w-full">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Mobile Website</h3>
+            <p class="text-gray-600 mb-4">The webpage dynamically adjusts to different screen sizes and organizes product cards into a visually appealing layout. The "Buy Now" buttons are placeholders and can be linked to purchasing pages..</p>
+            <a href="https://mobile-website-iota.vercel.app/" target="_blank" rel="noopener noreferrer" class="text-blue-500 font-semibold hover:underline">
+              View Project
+            </a>
+          </div>
+        </div>
+        <div class="bg-white shadow rounded-lg overflow-hidden">
+          <img src="./Hotel Site and 1 more page - Profile 1 - Microsoft​ Edge 30-12-2024 16_46_12.png" alt="Project 3" class="w-full">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Hotel Site</h3>
+            <p class="text-gray-600 mb-4">A hotel website typically serves as an online platform for showcasing a hotel's offerings, amenities, and services. It aims to attract potential guests and provide an easy way to make reservations. </p>
+            <a href="https://tutorial-phi-flame.vercel.app/" target="_blank" rel="noopener noreferrer" class="text-blue-500 font-semibold hover:underline">
+              View Project
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- About Section -->
+<section id="about" class="bg-gray-200 py-16">
+  <div class="container mx-auto px-6 flex flex-col-reverse md:flex-row items-center">
+    <!-- Text Content -->
+    <div class="md:w-1/2 text-center md:text-left">
+      <h2 class="text-3xl font-bold mb-6">About Me</h2>
+      <p class="text-lg text-gray-700 leading-relaxed">
+        I'm a web developer with experience in building modern, responsive websites and applications. My expertise includes HTML, CSS, JavaScript, and frameworks like React and Tailwind CSS. I strive to create elegant solutions that solve real-world problems while ensuring great user experiences.
+      </p>
+      <p class="text-lg text-gray-700 leading-relaxed mt-4">
+        When I'm not coding, I enjoy exploring new technologies, reading, and participating in hackathons. Let's build something amazing together!
+      </p>
+    </div>
+    <!-- Animated Image -->
+    <div class="md:w-1/2 relative flex justify-center">
+      <img 
+        src="Jishnu sullia.jpg" 
+        alt="About Me" 
+        class="w-full max-w-sm mx-auto rounded-lg"
+      />
+    </div>
+  </div>
+</section>
+<!-- Skills Section -->
+<section id="skills" class="bg-gray-100 py-16">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-8 text-center">My Skills</h2>
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 text-center">
+      <!-- Skill Card -->
+      <div class="bg-white shadow-lg rounded-lg p-6">
+        <i class="fab fa-html5 fa-3x text-orange-500 mb-4"></i>
+        <h3 class="text-lg font-semibold">HTML</h3>
+      </div>
+      <!-- Skill Card -->
+      <div class="bg-white shadow-lg rounded-lg p-6">
+        <i class="fab fa-css3-alt fa-3x text-blue-500 mb-4"></i>
+        <h3 class="text-lg font-semibold">CSS</h3>
+      </div>
+      <!-- Skill Card -->
+      <div class="bg-white shadow-lg rounded-lg p-6">
+        <i class="fab fa-bootstrap fa-3x text-purple-600 mb-4"></i>
+        <h3 class="text-lg font-semibold">Bootstrap</h3>
+      </div>
+      <!-- Skill Card -->
+      <div class="bg-white shadow-lg rounded-lg p-6">
+        <i class="fas fa-palette fa-3x text-teal-500 mb-4"></i>
+        <h3 class="text-lg font-semibold">Tailwind CSS</h3>
+      </div>
+      <!-- Skill Card -->
+      <div class="bg-white shadow-lg rounded-lg p-6">
+        <i class="fab fa-js-square fa-3x text-yellow-500 mb-4"></i>
+        <h3 class="text-lg font-semibold">JavaScript</h3>
+      </div>
+      <!-- Skill Card -->
+      <div class="bg-white shadow-lg rounded-lg p-6">
+        <i class="fab fa-react fa-3x text-blue-400 mb-4"></i>
+        <h3 class="text-lg font-semibold">React.js</h3>
+      </div>
+      <!-- Skill Card -->
+      <div class="bg-white shadow-lg rounded-lg p-6">
+        <i class="fab fa-node-js fa-3x text-green-500 mb-4"></i>
+        <h3 class="text-lg font-semibold">Node.js</h3>
+      </div>
+      <!-- Skill Card -->
+      <div class="bg-white shadow-lg rounded-lg p-6">
+        <i class="fas fa-database fa-3x text-green-600 mb-4"></i>
+        <h3 class="text-lg font-semibold">MongoDB</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+  <section id="contact" class="py-16 bg-gradient-to-r from-blue-500 to-purple-500 text-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-8 text-center">Contact Me</h2>
+      <form action="#" method="POST" class="max-w-lg mx-auto space-y-6">
+        <div>
+          <label for="name" class="block text-sm font-medium">Name</label>
+          <input type="text" id="name" name="name" required class="w-full px-4 py-2 mt-1 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+        <div>
+          <label for="email" class="block text-sm font-medium">Email</label>
+          <input type="email" id="email" name="email" required class="w-full px-4 py-2 mt-1 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+        <div>
+          <label for="message" class="block text-sm font-medium">Message</label>
+          <textarea id="message" name="message" rows="4" required class="w-full px-4 py-2 mt-1 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+        </div>
+        <button type="submit" class="w-full bg-white text-blue-500 px-4 py-2 rounded-lg font-semibold hover:bg-gray-200">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+<footer class="bg-gray-900 text-gray-300 py-10">
+  <div class="container mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left">
+      <!-- About Section -->
+      <div>
+        <h4 class="text-lg font-semibold mb-4 text-white">About Us</h4>
+        <p class="text-sm">
+          We aim to deliver high-quality services to ensure customer satisfaction. Experience the best with us!
+        </p>
+      </div>
+
+      <!-- Useful Links -->
+      <div>
+        <h4 class="text-lg font-semibold mb-4 text-white">Useful Links</h4>
+        <ul>
+          <li><a href="#" class="hover:text-gray-100">Home</a></li>
+          <li><a href="#" class="hover:text-gray-100">About</a></li>
+          <li><a href="#" class="hover:text-gray-100">Services</a></li>
+          <li><a href="#" class="hover:text-gray-100">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Media -->
+      <div>
+        <h4 class="text-lg font-semibold mb-4 text-white">Follow Me</h4>
+        <div class="flex justify-center md:justify-start space-x-4">
+          <a href="#" class="hover:text-gray-100">
+            <i class="fab fa-facebook fa-lg"></i>
+          </a>
+          <a href="#" class="hover:text-gray-100">
+            <i class="fab fa-twitter fa-lg"></i>
+          </a>
+          <a href="#" class="hover:text-gray-100">
+            <i class="fab fa-instagram fa-lg"></i>
+          </a>
+          <a href="#" class="hover:text-gray-100">
+            <i class="fab fa-linkedin fa-lg"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="border-t border-gray-700 my-6"></div>
+
+    <!-- Bottom Footer -->
+    <div class="text-center">
+      <p>&copy; 2024 Jishnu Prakash C. All rights reserved.</p>
+      <p>Built with ❤️ using Tailwind CSS</p>
+    </div>
+  </div>
+</footer>
+
+
+  <script>
+    const menuButton = document.getElementById('menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuButton.addEventListener('click', () => {
+      mobileMenu.style.display = mobileMenu.style.display === 'none' || !mobileMenu.style.display ? 'block' : 'none';
+    });
+  </script>
+</body>
+</html>
